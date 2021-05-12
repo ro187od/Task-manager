@@ -1,0 +1,17 @@
+<html>
+
+<body>
+<p>Список задач</p>
+<form method="post">
+    <input type="text" name="text" placeholder="Description task">
+    <button type="submit">Add</button>
+</form>
+{{#tasks}}
+    <div>
+        <i>{{id}}</i>
+        <span>{{description}}</span>
+    </div>
+{{/tasks}}
+
+</body>
+</html>
